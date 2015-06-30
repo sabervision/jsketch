@@ -1,17 +1,16 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Building a Javascript Etch-a-Sketch : JSketch</title>
-	<link rel="stylesheet" href="css/sketch.css">
+	<link rel="stylesheet" href="css/sketch.css" type="text/css">
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="js/jsketch.js" type="text/javascript" charset="utf-8"></script>
 </head>	
 <body>
-	<div id="wrapper">
-		
-		
+	<div id="button_wrapper">
+		<button id="start1" onclick="start(1)">START Mode 1</button>
+		<button id="start2" onclick="start(2)">START Mode 2</button>
 	</div>
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="js/jsketch.js"></script>
-
+	<div id="grid_wrapper"></div>
 </body>
 </html>
