@@ -3,7 +3,7 @@
 var start = function(option){
 		$('#grid_wrapper').html("");
 
-		var input = prompt('Specify a number between 1 and 256');
+		var input = prompt('Specify a number between 1 and 128');
 
 		if (input >= 1 && input <= 128) {  //ensure a valid input is used
 				var square_size = $('#grid_wrapper').width()/input - 2;  // -2 accounts for border size
@@ -29,6 +29,12 @@ var start = function(option){
 												$(this).css('opacity', currentOpacity - 0.1);
 										}
 										break;
+								case 3:
+										$(this).fadeTo(100,0);
+										$(this).mouseLeave(function(){
+												$(this).fadeTo(400,1);
+										});
+										break;
 						}	
 				});
 
@@ -36,6 +42,8 @@ var start = function(option){
 			else {
 					alert('User error: please follow the instructions!');
 			}
+
+
 }
 
 //});
